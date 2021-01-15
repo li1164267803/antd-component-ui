@@ -1,0 +1,144 @@
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+@import '~ant-design-vue/es/style/themes/default';
+@import '../color/colors';
+
+// The prefix to use on all css classes from wolf.
+@wolf-prefix: wolf;
+@number-font-family: Microsoft YaHei;
+
+// font-family of number
+@font-face {
+  font-family: 'Alte';
+  font-weight: normal;
+  font-style: normal;
+
+  // src: url('./fonts/slick.eot');
+  src: url('./assets/fonts/DIN1451ALT.ttf') format('truetype');
+}
+// @import './reset.less';
+
+// -------- Colors -----------
+@primary-color: @green;
+@info-color: @green;
+@success-color: @green;
+@processing-color: @green;
+@error-color: @red;
+@highlight-color: @red;
+@normal-color: @gray300;
+@white: #fff;
+@black: #000;
+
+// 主色
+@primary: @primary-color;
+@primary-75: @green75;
+@primary-15: @green15;
+// 覆盖
+@primary-5: @green75;
+// 辅助色
+@error-100: @red;
+@error-75: @red75;
+@error-15: @red15;
+@blue-100: @blue;
+@blue-75: @blue75;
+@blue-15: @blue15;
+@yello-100: @yello;
+@yello-75: @yello75;
+@yello-15: @yello15;
+// 灰色系
+@N600: @gray600;
+@N500: @gray500;
+@N400: @gray400;
+@N300: @gray300;
+@N200: @gray200;
+@N100: @gray100;
+
+// base
+@border-color-base: @N200;
+@text-color: @N500;
+@border-radius-base: 8px;
+@disabled-border-color: @N300;
+@text-theme-color: @primary-color;
+
+// checkbox
+@checkbox-size: 18px;
+@checkbox-border-width: 2px;
+
+// link
+@link-color: @primary-color;
+
+// btn
+@btn-default-border: @primary-color;
+@btn-default-color: @primary-color;
+@btn-text-shadow: none;
+@btn-shadow: none;
+@btn-primary-shadow: none;
+@btn-disable-bg: @N200;
+@btn-disable-border: @N200;
+@btn-disable-color: @N300;
+@btn-padding-base: 0 24px;
+@btn-padding-lg: 0 28px;
+
+// table
+@table-a-row-hover-bg: @N100;
+@table-a-row-color: @N500;
+@table-header-color: @N600;
+@table-header-bg: @N100;
+@table-padding-vertical: 16px;
+@table-padding-horizontal: 16px;
+
+// select
+@select-item-selected-font-weight: 400;
+@select-item-selected-bg: @white;
+
+// input
+@label-color: @N400;
+@input-disabled-bg: @N100;
+@input-addon-bg: @N100;
+@input-placeholder-color: @N400;
+
+// breadcrumb
+@breadcrumb-link-color: @N400;
+
+// tooltip
+@tooltip-arrow-width: 10px;
+
+// TimePicker
+@time-picker-panel-selected-bg: @green;
+@time-picker-panel-selected-color: @white;
+@time-picker-panel-hover-bg: @gray200;
+@time-picker-hover-border: @green;
+@time-picker-active-border: @green;
+@time-picker-border: @gray200;
+@time-picker-pannel-width: 80px;
+
+// Tabs
+@tabs-color: @N400;
+@tabs-highlight-color: @N500;
+@tabs-hover-color: @N600;
+@tabs-ink-bar-background: @green;
+// Card
+// ---
+@card-head-color: @N500;
+@card-head-background: transparent;
+@card-head-padding: 16px;
+@card-inner-head-padding: 12px;
+@card-padding-base: 24px;
+@card-padding-wider: 32px;
+@card-actions-background: #fff;
+@card-background: #ffffff;
+@card-shadow: 0px 4px 8px rgba(96, 97, 112, 0.16), 0px 0px 2px rgba(40, 41, 61, 0.04);
+@card-radius: 16px;
+
+// Carousel
+// ---
+@carousel-dot-width: 24px;
+@carousel-dot-height: 3px;
+@carousel-dot-active-width: 32px;
+@carousel-dot-active-height: 5px;
+
+// Tree
+// ---
+@tree-title-height: 24px;
+@tree-child-padding: 24px;
+@tree-directory-selected-color: #fff;
+@tree-directory-selected-bg: @primary-color;

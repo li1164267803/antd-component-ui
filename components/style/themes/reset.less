@@ -1,0 +1,292 @@
+@import '../color/colors';
+
+// 覆盖ant样式
+
+//btn
+.ant-btn-primary:hover,
+.ant-btn-primary:focus {
+  background: @green75;
+  border-color: @green75;
+}
+.ant-btn:not([disabled]):not(.ant-btn-primary.ant-btn-link):hover {
+  background: @green15;
+}
+.ant-btn-link {
+  padding: 0;
+}
+.ant-btn-link:hover {
+  color: @blue;
+}
+
+//checkbox
+.ant-checkbox-inner {
+  border-radius: 4px;
+}
+.ant-checkbox-wrapper:hover
+  .ant-checkbox:not(.ant-checkbox-checked):not(.ant-checkbox-disabled):not(.ant-checkbox-indeterminate)
+  .ant-checkbox-inner {
+  background: @green15;
+}
+.ant-checkbox-indeterminate .ant-checkbox-inner {
+  background: @green;
+  border-color: @green;
+}
+.ant-checkbox-indeterminate .ant-checkbox-inner::after {
+  height: 2px;
+  background: #fff;
+}
+.ant-checkbox-checked::after {
+  border-radius: 4px;
+}
+
+// tabs
+.ant-tabs-ink-bar {
+  display: none !important;
+}
+.ant-tabs-nav .ant-tabs-tab {
+  padding: 9px 0;
+}
+.ant-tabs-nav .ant-tabs-tab-active::after {
+  content: '';
+  width: calc(100% - 16px);
+  height: 2px;
+  background: @green;
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  border-radius: 1px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+}
+.ant-tabs {
+  color: @gray400;
+}
+.ant-tabs-nav .ant-tabs-tab.ant-tabs-tab-active {
+  color: @gray600;
+  font-weight: normal;
+}
+.ant-tabs-nav .ant-tabs-tab.ant-tabs-tab-active:hover {
+  color: @gray600;
+}
+.ant-tabs-nav .ant-tabs-tab:hover {
+  color: @gray400;
+}
+.ant-tabs-nav .ant-tabs-tab:hover::after {
+  display: block !important;
+  content: '';
+  width: calc(100% - 16px);
+  height: 2px;
+  background: @green;
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  border-radius: 1px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+}
+
+// table
+.ant-table.ant-table-bordered .ant-table-title {
+  background-color: @green15;
+  color: @gray600;
+  border: 1px solid @gray200;
+  box-sizing: border-box;
+  font-weight: bold;
+  padding: 14px 0;
+  text-align: center;
+}
+.ant-table-bordered .ant-table-thead > tr > th,
+.ant-table-thead > tr > th {
+  background-color: @gray100;
+  box-sizing: border-box;
+  border-radius: 0;
+  font-weight: bold;
+  border-right: @gray200;
+}
+.ant-table-bordered .ant-table-thead > tr > th:last-child,
+.ant-table-thead > tr > th:last-child {
+  border-right: 1px solid @gray200;
+}
+.ant-table-bordered .ant-table-thead > tr > th {
+  height: 48px;
+  padding: 0;
+}
+.ant-table-bordered .ant-table-t > tr > td {
+  border-right: 1px solid @gray200;
+  height: 40px;
+  padding: 0;
+  color: @gray500;
+}
+.ant-table-t > tr > td {
+  border-bottom: 1px solid @gray200;
+}
+.ant-table-thead > tr:first-child > th:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.ant-table-thead > tr:last-child > th:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.ant-table-t
+  > tr:hover:not(.ant-table-expanded-a-row):not(.ant-table-a-row-selected)
+  > td[rowspan] {
+  background-color: #fff;
+}
+
+// input
+.ant-input-affix-wrapper .ant-input-suffix i.ant-input-clear-icon {
+  display: none;
+}
+.ant-input-affix-wrapper:hover .ant-input-suffix i.ant-input-clear-icon {
+  display: inline-block;
+  color: @gray200;
+}
+.ant-input[disabled] {
+  color: @gray300;
+}
+.ant-input {
+  padding: 4px 12px;
+}
+.ant-input-group-addon {
+  color: @gray400;
+}
+
+// pagination
+.ant-pagination-item:focus,
+.ant-pagination-item:hover {
+  background: @green15;
+}
+.ant-pagination-options-quick-jumper input {
+  width: 32px;
+}
+
+// modal
+.ant-modal-root .ant-modal-mask {
+  background-color: @gray600;
+  opacity: 0.45;
+}
+.ant-modal-root .ant-modal .ant-modal-header {
+  padding: 13px 24px;
+  border-radius: 16px 16px 0 0;
+}
+.ant-modal-root .ant-modal .ant-modal-title {
+  color: @gray500;
+  font-size: 16px;
+  font-weight: bold;
+}
+.ant-modal-root .ant-modal .ant-modal-close-x {
+  color: @gray600;
+}
+.ant-modal-root .ant-modal .ant-modal-content {
+  border-radius: 16px;
+  box-shadow: none;
+}
+
+// select
+.ant-select-arrow .ant-select-arrow-icon {
+  color: @gray400;
+}
+.ant-select-dropdown-a-menu-item-selected {
+  color: @green;
+}
+.ant-select-dropdown-a-menu-item:hover:not(.ant-select-dropdown-a-menu-item-disabled) {
+  background: @gray100;
+}
+.ant-select-dropdown-a-menu-item-active:not(.ant-select-dropdown-a-menu-item-disabled) {
+  background: #fff;
+}
+.ant-select-selection-selected-value {
+  color: @gray500;
+}
+.ant-select.ant-select-disabled .ant-select-selection-selected-value {
+  color: @gray400;
+}
+
+//form
+.ant-form-item-label label {
+  font-size: 12px;
+}
+.ant-form-item-label > label::after {
+  content: '  ';
+}
+
+// breadcrumb
+.ant-breadcrumb a:hover {
+  color: @gray600;
+}
+
+// calendar
+.ant-calendar-date {
+  color: @gray500;
+  transition: none;
+}
+.ant-calendar-today .ant-calendar-date {
+  background: none;
+  color: @green;
+  border: none;
+  font-weight: normal;
+}
+.ant-calendar-selected-day .ant-calendar-date {
+  border-radius: 100px;
+  background: @green;
+  color: #fff;
+}
+.ant-calendar-last-month-cell .ant-calendar-date,
+.ant-calendar-next-month-btn-day .ant-calendar-date,
+.ant-calendar-last-month-cell .ant-calendar-date:hover,
+.ant-calendar-next-month-btn-day .ant-calendar-date:hover {
+  color: @gray400;
+}
+.ant-calendar-header .ant-calendar-century-select,
+.ant-calendar-header .ant-calendar-decade-select,
+.ant-calendar-header .ant-calendar-year-select,
+.ant-calendar-header .ant-calendar-month-select {
+  color: @gray500;
+}
+.ant-calendar-column-header-inner {
+  color: @gray400;
+}
+.ant-calendar-date:hover {
+  background: @gray200;
+  border-radius: 24px;
+}
+.ant-calendar-today-btn {
+  color: @green;
+  font-size: 14px;
+}
+.ant-calendar-picker-icon {
+  color: @gray500;
+}
+
+// radio
+.ant-radio-inner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid @gray300;
+  box-sizing: border-box;
+}
+
+.ant-radio-inner:after {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  display: table;
+  width: 10px;
+  height: 10px;
+  background-color: @green;
+  border-top: 0;
+  border-left: 0;
+  border-radius: 10px;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+  content: ' ';
+}
+
+.ant-radio:hover .ant-radio-inner {
+  border: 2px solid @green;
+  box-sizing: border-box;
+}

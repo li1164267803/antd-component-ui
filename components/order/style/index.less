@@ -1,0 +1,46 @@
+@import '../../style/themes/default';
+.wolf-order {
+  width: 100%;
+  color: @N500;
+  td,
+  th {
+    padding: 0;
+    margin: 0;
+  }
+  td {
+    border-bottom: 1px solid @N200;
+    border-left: 1px solid @N200;
+    border-right: 1px solid @N200;
+    border-radius: 0;
+    .cell {
+      padding: 16px;
+      font-size: 14px;
+      text-align: center;
+    }
+    .wolf-order-infos {
+      padding: 16px 0;
+    }
+  }
+}
+.wolf-order-item {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.wolf-order-item:not(:last-child) {
+  border-bottom: 1px solid @N200;
+  padding-bottom: 16px;
+}
+.wolf-order-item:not(:first-child) {
+  padding-top: 16px;
+}
+.wolf-order-header {
+  border: 1px solid @N200;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  height: 40px;
+  line-height: 40px;
+  background-color: @N100;
+  padding: 0 16px;
+  box-sizing: border-box;
+  margin-right: -1px;
+}
