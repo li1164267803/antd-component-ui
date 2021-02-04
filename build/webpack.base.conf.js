@@ -217,9 +217,9 @@ module.exports = {
     alias: {
       vue$: 'vue/dist/vue.esm.js',
       antd: path.join(__dirname, '../components'),
-      'wolf-antd': path.join(__dirname, '../components'),
-      'wolf-antd/es': path.join(__dirname, '../components'),
-      'wolf-antd/lib': path.join(__dirname, '../components'),
+      'growth-antd-web': path.join(__dirname, '../components'),
+      'growth-antd-web/es': path.join(__dirname, '../components'),
+      'growth-antd-web/lib': path.join(__dirname, '../components'),
       '@': path.join(__dirname, '../'),
     },
   },

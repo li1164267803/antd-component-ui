@@ -7,6 +7,10 @@ export default [
     component: () => import('../components/tooltip/demo/index.vue'),
   },
   {
+    path: 'banner-cn',
+    component: () => import('../components/banner/demo/index.vue'),
+  },
+  {
     path: 'order-cn',
     component: () => import('../components/order/demo/index.vue'),
   },

@@ -1,7 +1,7 @@
 {
-  "name": "@aixuexi/wolf-antd",
-  "version": "1.0.14",
-  "title": "爱学习组件库",
+  "name": "@aixuexi/growth-antd-web",
+  "version": "1.0.0",
+  "title": "爱学习增长组件库",
   "author": "aixuexiFE",
   "description": "基于Ant Design Vue",
   "keywords": [

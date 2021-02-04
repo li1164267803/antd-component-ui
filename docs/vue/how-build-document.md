@@ -1,6 +1,6 @@
 ## 如何构建文档
 
-站点地址：<https://wolf.aixuexi.com>
+站点地址：<https://growth.aixuexi.com>
 
 ### 1、在命令行中执行一下命令
 

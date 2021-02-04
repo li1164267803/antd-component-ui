@@ -18,11 +18,15 @@ if (
 }
 /* @remove-on-es-build-end */
 
-import { default as Tooltip } from './tooltip';
+import { default as version } from './version';
+import { default as GhTooltip } from './tooltip';
 import { default as Order } from './order';
+import { default as Banner } from './banner';
+
 const components = [
-  Tooltip,
+  GhTooltip,
   Order,
+  Banner,
 ];
 
 const install = function(Vue) {
@@ -32,7 +36,6 @@ const install = function(Vue) {
   //todo vue全局方法
 
   // Vue.prototype.$message = message;
-
   // Vue.prototype.$info = Modal.info;
   // Vue.prototype.$notification = Notification;
   // Vue.prototype.$success = Modal.success;
@@ -48,12 +51,13 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 export {
-  // version,
+  version,
   install,
-  Tooltip,
+  GhTooltip,
   Order,
+  Banner,
 };
 export default {
-  // version,
+  version,
   install,
 };

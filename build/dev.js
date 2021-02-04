@@ -39,9 +39,9 @@ import Md from './components/md';
 import Api from './components/api';
 import demoBox from './components/demoBox';
 import demoContainer from './components/demoContainer';
-import { Modal } from 'wolf-antd';
+import { Modal } from 'growth-antd-web';
 import { message } from 'ant-design-vue';
-import { Notification } from 'wolf-antd';
+import { Notification } from 'growth-antd-web';
 {{importComponents}}
 {{importStyles}}
 import '../components/notification/style';
@@ -115,7 +115,7 @@ const generateEntry = components => {
     })
     .concat(
       Object.keys(components.WolfComponent).map(component => {
-        if (/wolf/i.test(component)) {
+        if (/growth/i.test(component)) {
           return `import ${component} from '../components/${components.WolfComponent[component]}';`;
         } else {
           return '';
@@ -130,7 +130,7 @@ const generateStyles = components =>
   Object.keys(components.WolfComponent)
     .map(component => {
       //爱学习组件样式走本地
-      if (/wolf/i.test(component)) {
+      if (/growth/i.test(component)) {
         return `import '../components/${components.WolfComponent[component]}/style';`;
       } else {
         return '';
@@ -176,7 +176,7 @@ const renderTemplate = name => {
         }
         components.WolfComponent[componentName] = dirName;
       } else if (fs.existsSync(path.join(__dirname, `../components/${upperComponentDir}`))) {
-        components.WolfComponent['Wolf' + upperComponentName] = upperComponentDir;
+        components.WolfComponent['growth' + upperComponentName] = upperComponentDir;
       }
     });
   });

@@ -29,10 +29,9 @@
 <script>
 
 import { Tooltip } from 'ant-design-vue';
-// import 'ant-design-vue/lib/tooltip/style/index.js';
 
 export default {
-  name: 'AxxTooltip',
+  name: 'GhTooltip',
   components: { Tooltip },
   props: {
     // eslint-disable-next-line vue/require-default-prop

@@ -28,7 +28,7 @@
 
 ```html
 <template>
-  <axx-tooltip @forward-ref="tooltip" title="希文出品"></axx-tooltip>
+  <gh-tooltip @forward-ref="tooltip" title="希文出品"></gh-tooltip>
 </template>
 
 <script>

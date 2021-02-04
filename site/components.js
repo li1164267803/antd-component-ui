@@ -2,8 +2,8 @@ import Vue from 'vue';
 
 // TODO: 1. 注册组件
 import {
-  Tooltip,
-} from 'wolf-antd';
+  GhTooltip,
+} from 'growth-antd-web';
 
 // Vue.prototype.$message = message;
 // Vue.prototype.$notification = Notification;
@@ -14,6 +14,5 @@ import {
 // Vue.prototype.$confirm = Modal.confirm;
 // Vue.prototype.$destroyAll = Modal.destroyAll;
 
-Vue.use(Tooltip);
+Vue.use(GhTooltip);
 
-console.log(require('wolf-antd'));

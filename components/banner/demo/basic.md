@@ -65,17 +65,13 @@ todo
 ```tpl
 <template>
   <div>
-    <h3>文字多时，滑上显示</h3>
-    <div class="axx-tooltip-box">
-      <axx-tooltip
-        title="鼠标滑上使用 tooltip 显示全部内容 文字少时，没有裁切，鼠标滑上不显示 tooltip 希文出品 必属精品234"
-      />
-    </div>
-
-    <h3>文字少时 滑上不展示</h3>
-    <div class="axx-tooltip-box">
-      <axx-tooltip title="鼠标滑上使用 tooltip 显示全部内容 文字少时" />
-    </div>
+    <a-wolf-banner v-show="show" @handle="handle" :bgColor="place==='top'?'orange':undefined" :place="place" title="上次备课到" handleName="继续备课">
+      <template slot="content">
+        <a-wolf-icon type="iconearPhone" />2019高斯数学一阶A能力提高(青岛54版) 第1讲
+      </template>
+    </a-wolf-banner>
+    <a-wolf-button type="primary" @click="showBanner('bottom')">底部横幅</a-wolf-button>
+    <a-wolf-button type="primary" @click="showBanner('top')">顶部横幅</a-wolf-button>
   </div>
 </template>
 <script>
@@ -86,15 +82,24 @@ todo
         place:'top'
       }
     },
+    methods:{
+      handle(){
+        alert('跳转至继续备课')
+      },
+      showBanner(place){
+        if(this.place === place){
+          this.show = !this.show;
+        }else{
+          this.place = place;
+          this.show = true;
+        }
+      }
+    },
     mounted(){
     }
   }
 </script>
 <style>
-  .axx-tooltip-box {
-    width: 200px;
-    border: 1px solid #000;
-    height: 50px;
-  }
+
 </style>
 ```

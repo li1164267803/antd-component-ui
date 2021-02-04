@@ -1,5 +1,5 @@
-import AxxTooltip from './tooltip.vue';
-AxxTooltip.install = function(Vue) {
-  Vue.component(AxxTooltip.name, AxxTooltip);
+import Tooltip from './tooltip.vue';
+Tooltip.install = function(Vue) {
+  Vue.component(Tooltip.name, Tooltip);
 };
-export default AxxTooltip;
+export default Tooltip;

@@ -6,21 +6,21 @@
 ```tpl
 <template>
   <div>
-    <a-wolf-order :orderConfig="orderConfig" :orderData="orderData">
+    <a-growth-order :orderConfig="orderConfig" :orderData="orderData">
       <template v-slot:header="scoped">
         <div class="order-title" style="font-size:12px;">
           <div>订单编号：{{orderData.orderId}}</div>
           <div style="color: #A3B2C2;font-weight: 400;">下单日期：{{orderData.payTime}}</div>
         </div>
       </template>
-      <a-wolf-order-item class="body-info-item" v-for="item in orderData.mallOrderDetailVos" :key="item.id" :info="item">
+      <a-growth-order-item class="body-info-item" v-for="item in orderData.mallOrderDetailVos" :key="item.id" :info="item">
         <img :src="item.picUrl" />
         <div class="info-title">
           <div class="name">{{item.name}}</div>
           <div class="mallSkuName">规格：{{item.mallSkuName}}</div>
         </div>
-      </a-wolf-order-item>
-    </a-wolf-order>
+      </a-growth-order-item>
+    </a-growth-order>
   </div>
 </template>
 <script>

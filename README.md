@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="https://www.antdv.com/" target="_blank">Wolf Antd</a>
+  <a href="https://www.antdv.com/" target="_blank">Growth Antd</a>
 </h1>
 
 <div align="center">
@@ -18,20 +18,20 @@ An enterprise-class UI components based on Ant Design Vue.
 ### 使用 npm 或 yarn 安装
 
 ```bash
-$ npm install @aixuexi/wolf-antd --save
+$ npm install @aixuexi/growth-antd-web --save
 ```
 
 ```bash
-$ yarn add @aixuexi/wolf-antd
+$ yarn add @aixuexi/growth-antd-web
 ```
 
 ## 引入
 
-### 具体引入方式可以参考[ant-design-vue](https://wolf.aixuexi.com/)的官网，将 ant-design-vue 的引用换成@aixuexi/wolf-antd 即可；
+### 具体引入方式可以参考[ant-design-vue](https://growth.aixuexi.com/)的官网，将 ant-design-vue 的引用换成@aixuexi/growth-antd-web 即可；
 
 ## 链接
 
-- [首页](https://wolf.aixuexi.com/)
+- [首页](https://growth.aixuexi.com/)
 - [Vue 官方文档](https://cn.vuejs.org/)
 - [Ant Design Vue](https://www.antdv.com/)
 

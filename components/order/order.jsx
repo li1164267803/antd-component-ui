@@ -21,10 +21,10 @@ export default {
   render() {
     const { orderConfig, orderData, $scopedSlots } = this;
     return (
-      <table class={['wolf-order']}>
+      <table class={['growth-order']}>
         <tr>
           <th colSpan={orderConfig.body.length + 1}>
-            <div class={['wolf-order-header']}>
+            <div class={['growth-order-header']}>
               {orderConfig.header &&
                 orderConfig.header.slotName &&
                 $scopedSlots[orderConfig.header.slotName]({
@@ -35,7 +35,7 @@ export default {
         </tr>
         <tr>
           <td>
-            <div class="wolf-order-infos">
+            <div class="growth-order-infos">
               {$scopedSlots.default({
                 scoped: {},
               })}

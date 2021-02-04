@@ -3,9 +3,15 @@
 export default {
   tooltip: {
     category: 'Components',
-    subtitle: '横幅',
+    subtitle: '文字提示',
     type: 'General',
     title: 'Tooltip',
+  },
+  banner: {
+    category: 'Components',
+    subtitle: '文字提示',
+    type: 'General',
+    title: 'banner',
   },
   order: {
     category: 'Components',

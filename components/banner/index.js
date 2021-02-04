@@ -1,5 +1,5 @@
-import AxxTooltip from './banner.vue';
-AxxTooltip.install = function(Vue) {
-  Vue.component(AxxTooltip.name, AxxTooltip);
+import Banner from './banner';
+Banner.install = function(Vue) {
+  Vue.component(Banner.name, Banner);
 };
-export default AxxTooltip;
+export default Banner;

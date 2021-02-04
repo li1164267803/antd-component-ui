@@ -40,7 +40,7 @@ export default {
           <a-col class="header-left" xxl={4} xl={5} lg={5} md={6} sm={24} xs={24}>
             <router-link to={{ path: '/' }} id="logo">
               <img alt="logo" height="32" src={logo} />
-              <span id="logo-word">Wolf Antd Vue</span>
+              <span id="logo-word">Growth Antd Vue</span>
             </router-link>
             <a-button
               ghost

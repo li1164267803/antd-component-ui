@@ -18,6 +18,6 @@ export default {
   methods: {},
   render() {
     const { info, $scopedSlots } = this;
-    return <div class={['wolf-order-item']}>{info && $scopedSlots.default({ scoped: info })}</div>;
+    return <div class={['growth-order-item']}>{info && $scopedSlots.default({ scoped: info })}</div>;
   },
 };
